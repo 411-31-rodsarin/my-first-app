@@ -75,28 +75,16 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
 
     if score == 1:
         st.success("กาก 🐓")
-    else:
-        st.error("💀 You lose!")
-        
-    if score == 2:
+    elif score == 2:
         st.success("ไปฝึกมาใหม่ 🥀")
-    else:
-        st.error("💀 You lose!")
-        
-    if score == 3:
+    elif score == 3:
         st.success("คนทั่วไป 👍")
-    else:
-        st.error("💀 You lose!")
-
-    if score == 4:
+    elif score == 4:
         st.success("โหด 🤑")
+    elif score == 5:
+        st.success("bro is larping 😮‍💨🔥🔥")
     else:
-        st.error("💀 You lose!")
-
-    if score == 5:
-        st.success("bro is larping 🔥🔥")
-    else:
-        st.error("💀 You lose!")
+        st.error("seriously?? dont touch this game again 💀")
         
 
 st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
